@@ -119,33 +119,6 @@ class _SelectionListState extends State<SelectionList> {
                             onChanged: _filterElements,
                           ),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(15.0),
-                          child: Text(
-                            widget.theme?.lastPickText ?? 'LAST PICK',
-                            style: TextStyle(
-                                color:
-                                    widget.theme?.labelColor ?? Colors.black),
-                          ),
-                        ),
-                        Container(
-                          color: Colors.white,
-                          child: Material(
-                            color: Colors.transparent,
-                            child: ListTile(
-                              leading: Image.asset(
-                                widget.initialSelection!.flagUri!,
-                                package: 'country_list_pick',
-                                width: 32.0,
-                              ),
-                              title: Text(widget.initialSelection!.name!),
-                              trailing: Padding(
-                                padding: const EdgeInsets.only(right: 20.0),
-                                child: Icon(Icons.check, color: Colors.green),
-                              ),
-                            ),
-                          ),
-                        ),
                         SizedBox(height: 15),
                       ],
                     ),
